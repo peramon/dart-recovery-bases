@@ -1,0 +1,23 @@
+# Dart-related
+.dart_tool/
+.packages
+.pub/
+build/
+# Si usas flutter, puedes agregar:
+# .flutter-plugins
+# .flutter-plugins-dependencies
+
+# VS Code settings
+.vscode/
+
+# Archivos generados por sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Archivos de log temporales
+*.log
+
+# Archivos temporales de compilación o del sistema
+*.tmp
+*.swp
+*.lock
