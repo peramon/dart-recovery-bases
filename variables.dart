@@ -5,6 +5,14 @@ void main() {
   final List<String> skills = ['impostor'];
   final sprites = <String>['ditto/front.png'];
 
+  // dynamic == null
+  dynamic errorMessage = 'Hi';
+  errorMessage = true;
+  errorMessage = [1, 2, 3, 4, 5, 6];
+  errorMessage = {1, 2, 3, 4, 5, 6};
+  errorMessage = () => true;
+  errorMessage = null;
+
   //   print('Pokemon -> $pokemon');
   print("""Pokemon Data
   Pokemon -> $pokemon
@@ -12,5 +20,6 @@ void main() {
   Is Alive -> $isAlive
   Skills -> $skills
   Sprite -> $sprites
+  Dynamic type -> $errorMessage
   """);
 }
