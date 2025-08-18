@@ -105,4 +105,18 @@ class Hero {
 enum PlantType { NUCLEAR, WIND, WATER }
 ```
 
+### Mixins
+
+```dart
+class Paloma extends Ave with Volador, Caminante {}
+
+mixin Volador {
+  // Los mixins no puede extendedr de otra clase
+  void volar() => print('Estoy volando');
+}
+
+mixin Caminante {
+  void caminar() => print('Estoy caminando');
+}
+```
 
