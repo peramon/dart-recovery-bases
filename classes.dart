@@ -1,6 +1,6 @@
 // Clases
 void main() {
-  final wolverine = Hero('Wolverine', '100');
+  final wolverine = Hero(name: 'Wolverine', power: '100');
   print(wolverine);
   print(wolverine.name);
   print(wolverine.power);
@@ -11,5 +11,10 @@ class Hero {
   String power;
 
   // Hero(String name, String power) : name = name, power = power;
-  Hero(this.name, this.power);
+  Hero({required this.name, required this.power});
+
+  @override
+  String toString() {
+    return '$name - $power';
+  }
 }
