@@ -99,4 +99,10 @@ class Hero {
     _side = side;
 ```
 
+### Enum
+
+```dart
+enum PlantType { NUCLEAR, WIND, WATER }
+```
+
 
