@@ -40,4 +40,36 @@ final reversedNumbers = numbers.reversed;
   print('Set: ${reversedNumbers.toSet()}'); // Valores unicos no se repiten
 ```
 
+## Functions
+
+```dart
+print(greetPerson(message: 'How are you'));
+
+String greetPerson({String? message, String? name = 'Paul'}) {
+  return '${message}, ${name}';
+}
+```
+
+## Classes
+
+- Elemplo de clases
+
+```dart
+void main() {
+  final wolverine = Hero('Wolverine', '100');
+  print(wolverine);
+  print(wolverine.name);
+  print(wolverine.power);
+}
+
+class Hero {
+  String name;
+  String power;
+
+  // Hero(String name, String power) : name = name, power = power; // Forma comun de definir las clases
+  Hero(this.name, this.power); // Otra forma de definir el constructor
+}
+
+```
+
 
