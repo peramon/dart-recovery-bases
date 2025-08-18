@@ -25,7 +25,7 @@ final Map<String, dynamic> pokemon = {
 };
 ````
 
-## List, iterables y sets
+### List, iterables y sets
 
 - List
 ```dart
@@ -40,7 +40,7 @@ final reversedNumbers = numbers.reversed;
   print('Set: ${reversedNumbers.toSet()}'); // Valores unicos no se repiten
 ```
 
-## Functions
+### Functions
 
 ```dart
 print(greetPerson(message: 'How are you'));
@@ -50,7 +50,7 @@ String greetPerson({String? message, String? name = 'Paul'}) {
 }
 ```
 
-## Classes
+### Classes
 
 - Elemplo de clases
 
@@ -70,6 +70,33 @@ class Hero {
   Hero(this.name, this.power); // Otra forma de definir el constructor
 }
 
+```
+
+### Getters and Setters
+
+```dart
+  // getter
+  double get area {
+    return _side * _side;
+  }
+
+  // setter
+  set side(double value) {
+    print('setting new value $value');
+    if (value < 0) throw 'Value must be >= 0';
+  }
+```
+
+### Aserciones
+
+> Las Aserciones sirven para poner una restriccion en la clase que se debe cumplir acerca de algun parametro, por ejemplo si se precisa solo de numeros positivos se puede poner una asersocion mayor a cero
+
+- definicion de una asercion
+
+```dart
+  Square({required double side}) 
+    : assert(side >= 0, 'Side must be >= 0'), // Asercion
+    _side = side;
 ```
 
 
